@@ -34,58 +34,280 @@
     <!-- PROJECTS PAGE -->
     <section id="projects-page" class="section active">
         <div class="content">
-            <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+            <h2><i class="fas fa-project-diagram"></i> My Projects</h2>
 
-            <!-- PROJECT CARDS -->
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-shield-alt project-icon"></i>
-                        <h3>Secure Network Scanner</h3>
+            <!-- Cybersecurity Projects -->
+            <div class="project-section">
+                <h3 class="section-title"><i class="fas fa-shield-alt"></i> Cybersecurity Projects</h3>
+                <div class="project-grid">
+                    <!-- NetSpecter -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-network-wired project-icon"></i>
+                            <h3>NetSpecter</h3>
+                        </div>
+                        <p>A stealthy and fast port scanner that detects open ports and grabs banners, without revealing the underlying scanning engine. It supports scanning full port ranges across multiple hosts and gives highly readable output.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-network-wired"></i> Network</span>
+                            <span><i class="fas fa-user-secret"></i> Stealth</span>
+                            <span><i class="fas fa-terminal"></i> CLI</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastebin.com/HrLV31YJ" target="_blank" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                            <a href="https://youtu.be/e0AKbLgkyZs" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </div>
                     </div>
-                    <p>Advanced network vulnerability scanner built with Python and Scapy. Features automated penetration testing capabilities and detailed reporting.</p>
-                    <div class="project-tech">
-                        <span><i class="fab fa-python"></i> Python</span>
-                        <span><i class="fas fa-network-wired"></i> Scapy</span>
-                        <span><i class="fas fa-file-code"></i> SQLite</span>
+
+                    <!-- MACinator -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-ethernet project-icon"></i>
+                            <h3>MACinator</h3>
+                        </div>
+                        <p>A MAC address changer that instantly spoofs or resets the MAC address of the current system's active interface. Includes both random and custom MAC address options. No device selection needed — it auto-detects.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-network-wired"></i> Networking</span>
+                            <span><i class="fas fa-random"></i> Spoofing</span>
+                            <span><i class="fas fa-shield-alt"></i> Privacy</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastebin.com/8ZNMAzr4" target="_blank" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                            <a href="https://youtu.be/SIRUWvmmqpk" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                        <a href="#" class="project-link"><i class="fas fa-play"></i> Live Demo</a>
+
+                    <!-- InjeXion -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-database project-icon"></i>
+                            <h3>InjeXion</h3>
+                        </div>
+                        <p>A SQL Injection scanner that tests parameters in a given URL using a list of payloads. It checks for SQL error responses to determine if parameters are vulnerable. Output includes payloads that worked and snippets of the triggered SQL errors.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-database"></i> SQL</span>
+                            <span><i class="fas fa-bug"></i> Pentesting</span>
+                            <span><i class="fas fa-search"></i> Scanner</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastebin.com/rHGRUis8" target="_blank" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                            <a href="https://youtu.be/WDcgtGCjXjg" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </div>
+                    </div>
+
+                    <!-- BruteBeast -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-key project-icon"></i>
+                            <h3>BruteBeast</h3>
+                        </div>
+                        <p>A brute-force login cracker that attacks web login forms using user-provided wordlists. It automatically detects failed/success responses and avoids lockout mechanisms by analyzing response patterns.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-key"></i> Password</span>
+                            <span><i class="fas fa-robot"></i> Automation</span>
+                            <span><i class="fas fa-shield-alt"></i> Security</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastebin.com/prF7kCWM" target="_blank" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                            <a href="https://youtu.be/X6EaSGGA_Fs" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </div>
+                    </div>
+
+                    <!-- HashInferno -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-fire project-icon"></i>
+                            <h3>HashInferno</h3>
+                        </div>
+                        <p>A local password hash cracker that supports multiple hash types. Automatically detects hash type and uses wordlists to crack hashes quickly. Ideal for cracking dumped hashes in CTFs or during pentests.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-hashtag"></i> Hashing</span>
+                            <span><i class="fas fa-unlock"></i> Cracking</span>
+                            <span><i class="fas fa-flag"></i> CTF</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastebin.com/iryiE2Hz" target="_blank" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                            <a href="https://youtu.be/uZmEzFkvCTE" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </div>
+                    </div>
+
+                    <!-- UserHound -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-user-secret project-icon"></i>
+                            <h3>UserHound</h3>
+                        </div>
+                        <p>A username lookup tool that searches for a given handle across multiple popular platforms (e.g., GitHub, TikTok, Reddit, etc.). It returns URLs where the username exists and confirms live status.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-search"></i> OSINT</span>
+                            <span><i class="fas fa-users"></i> Social</span>
+                            <span><i class="fas fa-globe"></i> Web</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastebin.com/cg4infr0" target="_blank" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                            <a href="https://youtu.be/_jhXf_OkdTU" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </div>
+                    </div>
+
+                    <!-- MetaSweep -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-file-search project-icon"></i>
+                            <h3>MetaSweep</h3>
+                        </div>
+                        <p>A metadata analyzer that extracts EXIF and hidden file data from images, PDFs, and other files. Useful for forensic investigations, OSINT, and identifying leaks. Uses exiftool if available.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-file-alt"></i> Metadata</span>
+                            <span><i class="fas fa-search"></i> Forensics</span>
+                            <span><i class="fas fa-eye"></i> OSINT</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastebin.com/t64KMxiU" target="_blank" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                            <a href="https://youtu.be/rMVrG4vmE1w" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </div>
+                    </div>
+
+                    <!-- SubZero -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-sitemap project-icon"></i>
+                            <h3>SubZero</h3>
+                        </div>
+                        <p>A powerful subdomain enumeration engine that uses DNS brute-forcing, resolution checks, and custom wordlists. It aggressively finds subdomains tied to a main domain and verifies live status.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-network-wired"></i> DNS</span>
+                            <span><i class="fas fa-list"></i> Enumeration</span>
+                            <span><i class="fas fa-server"></i> Recon</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastebin.com/Q8TfetaC" target="_blank" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                            <a href="https://youtu.be/6lFhhl81ziU" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon Card -->
+                    <div class="project-card empty-card">
+                        <i class="fas fa-plus"></i>
+                        <p>Coming Soon</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-gamepad project-icon"></i>
-                        <h3>Roblox RPG Game</h3>
+            <!-- Roblox Projects -->
+            <div class="project-section">
+                <h3 class="section-title"><i class="fas fa-gamepad"></i> Roblox Projects</h3>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-sword project-icon"></i>
+                            <h3>RPG Adventure</h3>
+                        </div>
+                        <p>Immersive RPG game with advanced combat mechanics, inventory system, and multiplayer features.</p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-code"></i> Luau</span>
+                            <span><i class="fas fa-cubes"></i> Roblox</span>
+                            <span><i class="fas fa-users"></i> Multiplayer</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-gamepad"></i> Play Game</a>
+                            <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+                        </div>
                     </div>
-                    <p>Immersive RPG experience with advanced combat mechanics, inventory system, and multiplayer features. Built using Luau and Roblox Studio.</p>
-                    <div class="project-tech">
-                        <span><i class="fas fa-code"></i> Luau</span>
-                        <span><i class="fas fa-cubes"></i> Roblox</span>
-                        <span><i class="fas fa-users"></i> Multiplayer</span>
+
+                    <!-- Add more Roblox project cards here -->
+                    <div class="project-card empty-card">
+                        <i class="fas fa-plus"></i>
+                        <p>Coming Soon</p>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-gamepad"></i> Play Game</a>
-                        <a href="#" class="project-link"><i class="fas fa-info-circle"></i> Details</a>
+                    <div class="project-card empty-card">
+                        <i class="fas fa-plus"></i>
+                        <p>Coming Soon</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-robot project-icon"></i>
-                        <h3>Discord Security Bot</h3>
+            <!-- Discord Bot Projects -->
+            <div class="project-section">
+                <h3 class="section-title"><i class="fab fa-discord"></i> Discord Bot Projects</h3>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-shield-alt proje   ct-icon"></i>
+                            <h3>Anti-Slur Guardian</h3>
+                        </div>
+                        <p>Advanced Discord moderation bot powered by Google's Gemini AI that automatically detects and prevents toxic language, slurs, and inappropriate content in real-time. Features smart context analysis and efficient message filtering.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fab fa-discord"></i> Discord.py</span>
+                            <span><i class="fas fa-brain"></i> Gemini AI</span>
+                            <span><i class="fas fa-shield-alt"></i> Moderation</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastebin.com/meeeNjjJ" target="_blank" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                            <a href="https://www.youtube.com/watch?v=4SjzYVk9xZo" target="_blank" class="project-link"><i class="fab fa-youtube"></i> Demo Video</a>
+                        </div>
                     </div>
-                    <p>Advanced Discord bot with server security features, user verification, and automated moderation tools. Built with Discord.py.</p>
-                    <div class="project-tech">
-                        <span><i class="fab fa-python"></i> Python</span>
-                        <span><i class="fab fa-discord"></i> Discord.py</span>
-                        <span><i class="fas fa-database"></i> MongoDB</span>
+
+                    <!-- Add more Discord bot project cards here -->
+                    <div class="project-card empty-card">
+                        <i class="fas fa-plus"></i>
+                        <p>Coming Soon</p>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                        <a href="#" class="project-link"><i class="fas fa-plus-circle"></i> Add to Server</a>
+                    <div class="project-card empty-card">
+                        <i class="fas fa-plus"></i>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development Projects -->
+            <div class="project-section">
+                <h3 class="section-title"><i class="fas fa-globe"></i> Web Development</h3>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-laptop-code project-icon"></i>
+                            <h3>Portfolio Website</h3>
+                        </div>
+                        <p>Modern, responsive portfolio website with Three.js animations and smooth transitions.</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3"></i> CSS3</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Site</a>
+                        </div>
+                    </div>
+
+                    <!-- Add more web development project cards here -->
+                    <div class="project-card empty-card">
+                        <i class="fas fa-plus"></i>
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="project-card empty-card">
+                        <i class="fas fa-plus"></i>
+                        <p>Coming Soon</p>
                     </div>
                 </div>
             </div>
