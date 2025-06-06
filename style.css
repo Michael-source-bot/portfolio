@@ -498,6 +498,34 @@ nav#navbar .nav-links li a.selected-remote::after {
     box-shadow: 0 0 10px var(--primary-color);
 }
 
+/* Project Sections */
+.project-section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: rgba(26, 26, 26, 0.8);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 159, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.project-section:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-title i {
+    font-size: 1.8rem;
+    opacity: 0.9;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -514,6 +542,33 @@ nav#navbar .nav-links li a.selected-remote::after {
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
+}
+
+/* Empty card styles */
+.empty-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.empty-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.empty-card p {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.empty-card:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
 }
 
 .project-card::before {
@@ -566,8 +621,9 @@ nav#navbar .nav-links li a.selected-remote::after {
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.8rem;
     margin-bottom: 1.5rem;
+    justify-content: flex-start;
 }
 
 .project-tech span {
@@ -580,6 +636,14 @@ nav#navbar .nav-links li a.selected-remote::after {
     align-items: center;
     gap: 0.5rem;
     transition: all 0.3s;
+    justify-content: center;
+    flex: 0 1 auto;
+}
+
+/* Remove the old grid-based centering for the last tag */
+.project-tech span:last-child:nth-child(2n + 1) {
+    margin: 0;
+    width: auto;
 }
 
 .project-tech span:hover {
