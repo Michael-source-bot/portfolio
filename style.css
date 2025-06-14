@@ -638,6 +638,13 @@ nav#navbar .nav-links li a.selected-remote::after {
     transition: all 0.3s;
     justify-content: center;
     flex: 0 1 auto;
+    min-width: calc(50% - 0.4rem);
+    max-width: calc(50% - 0.4rem);
+}
+
+.project-tech span:hover {
+    background: rgba(0, 255, 159, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Remove the old grid-based centering for the last tag */
@@ -646,18 +653,15 @@ nav#navbar .nav-links li a.selected-remote::after {
     width: auto;
 }
 
-.project-tech span:hover {
-    background: rgba(0, 255, 159, 0.2);
-    transform: translateY(-2px);
-}
-
 .project-links {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .project-link {
-    padding: 0.75rem 1.5rem;
+    padding: 0.6rem 1rem;
     border-radius: 25px;
     font-size: 0.9rem;
     display: flex;
@@ -667,6 +671,10 @@ nav#navbar .nav-links li a.selected-remote::after {
     background: rgba(0, 255, 159, 0.1);
     color: var(--primary-color);
     border: 1px solid rgba(0, 255, 159, 0.2);
+    flex: 1;
+    min-width: 120px;
+    justify-content: center;
+    white-space: nowrap;
 }
 
 .project-link:hover {
@@ -693,11 +701,18 @@ nav#navbar .nav-links li a.selected-remote::after {
     
     .project-links {
         flex-direction: column;
+        width: 100%;
     }
     
     .project-link {
+        width: 100%;
         text-align: center;
         justify-content: center;
+    }
+
+    .project-tech span {
+        min-width: 100%;
+        max-width: 100%;
     }
 }
 
